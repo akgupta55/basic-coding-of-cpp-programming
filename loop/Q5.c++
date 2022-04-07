@@ -8,28 +8,14 @@ int main()
 {
     int n, tr1 = 0, tr2 = 1, nextTerm = 0;
     cin >> n;
-    int stop;
-    cin >> stop;
-    if (nextTerm < stop)
-    {
-        for (int i = 1; i <= n; i++)
-        {
-            if (i == 1)
-            {
-                cout << tr1 << " , ";
-                continue;
-            }
-            if (i == 2)
-            {
-                cout << tr2 << " , ";
-                continue;
-            }
+        cout<<"fibonacci series ::--\n"<<tr1<<" , "<<tr2<<" , ";
             nextTerm = tr1 + tr2;
-            tr1 = tr2;
-            tr2 = nextTerm;
-            cout << nextTerm << " , ";
-        }
-    }
-
+            while (nextTerm<=n)
+            {
+                cout << nextTerm << " , ";
+                tr1 = tr2;
+                tr2 = nextTerm;
+                nextTerm = tr1 + tr2;
+            }
     return 0;
 }
