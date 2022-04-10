@@ -1,0 +1,74 @@
+        ****>>>>>>>>>  SWITCH  <<<<<<<<********
+
+1) Write a Program to Make a Simple Calculator to Add, Subtract, Multiply or Divide Using Switch case
+The program should takes an arithmetic operator (+, -, *, /) and two operands from a user and 
+performs the operation on those two operands depending upon the operator entered by the user.
+
+
+         ****>>>>>>>>> PATTERN  <<<<<<<<********
+
+Print the below Pattern using loops
+
+1) Solid Rectangular star       
+
+* * * * *
+* * * * *
+* * * * *
+
+2) Hollow Rectangular star
+* * * * *
+*     *
+* * * * *
+
+3) Half Pyramid Star Pattern 
+*
+* *
+* * *
+* * * *
+* * * * *
+
+4) Inverted Half pyramid
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+5) Full Pyramid Star Pattern
+     *
+    * *
+   * * *
+  * * * *
+ * * * * *
+* * * * * *
+
+6) Inverted Full pyramid
+* * * * * *
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+
+7)Hollow Full Pyramid Star
+    *
+   * *
+  *   *
+ *     *
+ *******
+
+ 8) Half pyramid using numbers
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+9) Pascal Triangle
+ 
+     1
+    1 1
+   1 2 1
+  1 3 3 1
+ 1 4 6 4 1
