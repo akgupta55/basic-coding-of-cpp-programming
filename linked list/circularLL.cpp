@@ -55,17 +55,38 @@ void insertAtTail(node* &head, int val)
     n->next=head;
 }
 
-// void deletion(node* head, int val)
-// {
-//     node* temp=head;
-//     while (temp->next->data!=head)
-//     {
-//         temp=temp->next;
-//     }
-//     node* todelet=temp->next;
-//     temp->next=temp->next->next;
-//     delete todelet;
-// }
+void deleteAtHead(node* &head)
+{
+    node* temp=head;
+    while (temp->next!=head)
+    {
+        temp=temp->next;
+    }
+    node* todelete=head;
+    temp->next=head->next;
+    head=head->next;
+
+    delete todelete;
+}
+void deletion(node* head, int pos)
+{
+    if (pos==1)
+    {
+        deleteAtHead(head);
+        return;
+    }
+    
+    node* temp=head;
+    int count=1;
+    while (count!=pos-1)
+    {
+        temp=temp->next;
+        count++;
+    }
+    node* todelet=temp->next;
+    temp->next=temp->next->next;
+    delete todelet;
+}
 
 void display(node* head)
 {
@@ -88,6 +109,10 @@ int main()
     insertAtTail(head,3);
     display(head);
     insertATHead(head,4);
+    display(head);
+    deletion(head,3);
+    display(head);
+    deleteAtHead(head);
     display(head);
     return 0;
 }
