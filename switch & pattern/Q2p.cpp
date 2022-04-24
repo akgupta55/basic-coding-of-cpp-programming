@@ -14,9 +14,9 @@ int main()
     {
         for (int j = 1; j <=col; j++)
         {
-            if (i==1||i==row||j==1||j==col+1)
+            if (i==1||i==row||j==1||j==col)
             {
-                cout<<"* ";
+                cout<<"*";
             }
             else
             cout<<" ";
