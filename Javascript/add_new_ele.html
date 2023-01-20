@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tasks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <button id="addTask">Add task</button>
+    </div>
+    <div class="tasks"></div>
+    <script type="text/javascript">
+
+        // Getting the parent element in which
+        // the new div will be created
+        let task = document.getElementsByClassName("tasks");
+
+        // Getting the addTask button element
+        let addTask = document.getElementById("addTask");
+
+        // Adding onclick event to the button
+        addTask.addEventListener('click', function () {
+
+            // Traversing through collection of HTML
+            // elements (tasks here)
+            for (let i = 0; i < task.length; i++) {
+
+                // New div element is created
+                let newDiv = document.createElement("div");
+
+                // Setting the attribute of class type to newDiv
+                newDiv.setAttribute("class", "list");
+
+                // innerText used to write the text in newDiv
+                newDiv.innerText = prompt("Enter message");
+
+                // Finally append the newDiv to the
+                // parent i.e. tasks
+                task[i].append(newDiv);
+            }
+        })
+    </script>
+</body>
+
+</html>

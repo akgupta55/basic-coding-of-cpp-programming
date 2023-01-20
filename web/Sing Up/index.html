@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up page</title>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="basic_info">
+                <form action="post">
+                    <h2>
+                        <spam>1</spam>Your Basic Info
+                    </h2>
+                    <p>Name:</p>
+                    <input type="text" name="name" id="name">
+                    <p>Email:</p>
+                    <input type="email" name="Email" id="Email">
+                    <p>Password:</p>
+                    <input type="password" name="Password" id="Password">
+                    <p>Age:</p>
+                    <input type="radio" name="age" id="age">
+                    <label for="age1">Under 18</label><br>
+                    <input type="radio" name="age" id="age">
+                    <label for="age2">Over 18</label>
+            </div>
+            <div class="profile">
+                <h2>
+                    <spam>2</spam>Your Profile
+                </h2>
+                <p>Upload Image:</p>
+                <input type="file" name="file" id="file">
+                <p>Bio:</p>
+                <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+                <p>Job Role:</p>
+                <select name="job" id="job">
+                    <option value="1">Front-end Devloper</option>
+                    <option value="1">Back-end Devloper</option>
+                    <option value="1">Fullstack Devloper</option>
+                </select>
+                <p>Interest:</p>
+                <input type="checkbox" name="age" id="age">
+                <label for="in1">Devlopment</label><br>
+                <input type="checkbox" name="age" id="age">
+                <label for="in2">Design</label><br>
+                <input type="checkbox" name="age" id="age">
+                <label for="in3">Bussiness</label>
+            </div>
+            <input type="button" value="Sign Up" class="btn">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
