@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left top, rgb(203, 124, 124), rgb(242, 176, 238));
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #9a97a2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#display {
+    background-color: rgb(88, 139, 107);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    height: 100px;
+    color: antiquewhite;
+    text-align: right;
+    font-size: 45px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.allbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mycol {
+    display: flex;
+    flex-direction: column;
+}
+
+.mybtn {
+    background-color: gray;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.mybtn1 {
+    background-color: rgb(207, 207, 85);
+    color: white;
+}
+
+.mybtn2 {
+    background-color: rgb(85, 207, 164);
+    color: white;
+
+}
+
+.mybtn3 {
+    background-color: rgb(207, 85, 105);
+    color: white;
+
+}
