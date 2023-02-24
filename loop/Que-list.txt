@@ -23,3 +23,4 @@ Prime numbers between 0 and 20 are:
 2 3 5 7 11 13 17 19
 15) Write a Program to check whether a number entered by the user is an Armstrong number or not.
 16) Write a Program to Display all Factors of a Number entered by User
+17) finding perfect square between two numbers 

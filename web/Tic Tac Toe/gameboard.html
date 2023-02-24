@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameBoard</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(to bottom left, #c02ce4, rgb(112, 112, 240));
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 25px;
+        background-color: rgb(82, 80, 80);
+        padding: 10px 20px;
+        border-radius: 15px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .gameboard {
+        /* border: 1px solid black; */
+        /* width: 350px; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gameboardrow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box {
+        /* background-color: red; */
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    .vr {
+        width: 6px;
+        height: 100px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .hr {
+        height: 6px;
+        width: 312px;
+        /* : 462px; */
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .scoreboard {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+
+    }
+
+    .score {
+        background-color: white;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+    }
+
+    .btn {
+        background-color: white;
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        width: 150px;
+    }
+
+    .buttonbtn {
+        position: absolute;
+        bottom: 20px;
+    }
+</style>
+
+<body>
+    <div class="scoreboard">
+        <p class="score">AJAY - 3</p>
+        <p class="score">VIJAY - 0</p>
+    </div>
+    <h1>TURN - Ajay X</h1>
+    <div class="gameboard">
+        <div class="gameboardrow">
+            <div class="box" id="box1">X</div>
+            <div class="vr"></div>
+            <div class="box" id="box2">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box3">O</div>
+        </div>
+        <div class="hr"></div>
+        <div class="gameboardrow">
+            <div class="box" id="box4">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box5">X</div>
+            <div class="vr"></div>
+            <div class="box" id="box6">X</div>
+        </div>
+        <div class="hr"></div>
+        <div class="gameboardrow">
+            <div class="box" id="box7">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box8">O</div>
+            <div class="vr"></div>
+            <div class="box" id="box9">O</div>
+        </div>
+    </div>
+
+    <div class="buttonbtn">
+        <button class="btn" id="Quit" onclick="window.location.href='index.html'">Quit</button>
+        <button class=" btn" id="Reset">Reset</button>
+    </div>
+</body>
+
+</html>

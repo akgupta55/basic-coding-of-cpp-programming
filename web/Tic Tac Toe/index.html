@@ -7,9 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIC TAC TOE</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: linear-gradient(to bottom left, #c02ce4, rgb(112, 112, 240));
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .formout {
+        width: 400px;
+        height: 200px;
+        background-color: rgb(223, 222, 220);
+        margin: 10px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .formcont {
+        padding: 10px 0px;
+        margin: 10px;
+        display: flex;
+        font-size: 30px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        margin-bottom: 10px;
+        font-size: 50px;
+    }
+
+    .formcont input {
+        padding: 10px;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+
+    .formout button {
+        /* color: aquamarine; */
+        padding: 10px 20px;
+        margin-top: 10px;
+
+        /* height: 30px; */
+        /* width: 100px; */
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px gray;
+    }
+
+    .formout button:hover {
+        background-color: black;
+        color: white;
+        box-shadow: 0px 0px 10px rgb(162, 250, 173);
+    }
+</style>
 
 <body>
-
+    <h1>Tic Tac Toe</h1>
+    <div class="formout">
+        <div class="formcont">
+            <p>Player X:</p>
+            <input placeholder="Enter Player X Name" id="playerx" />
+        </div>
+        <div class="formcont">
+            <p>Player O:</p>
+            <input placeholder="Enter Player O Name" id="playero" />
+        </div>
+        <button onclick="window.location.href='gameboard.html'">Start Game</button>
+    </div>
 </body>
+
 
 </html>
