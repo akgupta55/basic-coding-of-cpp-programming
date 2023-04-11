@@ -1,27 +1,37 @@
 // 9) Pascal Triangle
- 
-//      1
-//     1 1
-//    1 2 1
-//   1 3 3 1
-//  1 4 6 4 1
 
-#include<iostream>
+//     1
+//    123
+//   12345
+//  1234567
+// 123456789
+
+#include <iostream>
 using namespace std;
 int main()
 {
-    int row,col;
-    cout<<"Enter row and col ::--- "<<endl;
-    cin>>row>>col;
-    for (int i = 0; i < row; i++)
+    int n;
+    cout << "Enter row ::--- " << endl;
+    cin >> n;
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < col; j++)
+        int x = 1;
+        for (int j = 0; j < n - i - 1; j++)
         {
-            /* code */
+            cout << " ";
         }
-        
-        /* code */
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << x;
+            x++;
+        }
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+
+        cout << endl;
     }
-    
+
     return 0;
 }

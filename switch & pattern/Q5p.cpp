@@ -6,22 +6,33 @@
 //  * * * * *
 // * * * * * *
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    int row,col;
-    cout<<"Enter row and col ::--- "<<endl;
-    cin>>row>>col;
-    for (int i = 0; i < row; i++)
+    int n;
+    cout << "Enter row ::--- " << endl;
+    cin >> n;
+    // Write your code here.
+
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < col; j++)
+
+        for (int j = 0; j < n - i - 1; j++)
         {
-            /* code */
+            cout << " ";
         }
-        
-        /* code */
+        for (int j = 0; j < 2 * i + 1; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < n - i - 1; j++)
+        {
+            cout << " ";
+        }
+
+        cout << endl;
     }
-    
+
     return 0;
 }

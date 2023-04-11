@@ -5,22 +5,24 @@
 // 1 2 3 4
 // 1 2 3 4 5
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    int row,col;
-    cout<<"Enter row and col ::--- "<<endl;
-    cin>>row>>col;
-    for (int i = 0; i < row; i++)
+    int n;
+    cout << "Enter row ::--- " << endl;
+    cin >> n;
+    for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < col; j++)
+        int x = 1;
+        for (int j = 0; j <= i; j++)
         {
-            /* code */
+            cout << x << " ";
+            x++;
         }
-        
-        /* code */
+
+        cout << endl;
     }
-    
+
     return 0;
 }
